@@ -1,0 +1,136 @@
+.dashboard {
+  display: flex;
+
+  &__content__head-section {
+    background: #fafbfc;
+    border-radius: 2rem 2rem 0 0;
+  }
+  &__content {
+    padding-top: 0;
+    margin-left: 6rem;
+    flex: 1;
+    &__main-header {
+      justify-content: space-between;
+      color: #7d8fb3;
+      h2 {
+        color: $txt-main-header-color;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      &__nav {
+        font-weight: 700;
+        font-size: 12px;
+        padding: 1rem 2rem;
+        background-color: #fff;
+        border-radius: 30px;
+        ul {
+          gap: 3rem;
+          li {
+            line-height: 2rem;
+          }
+        }
+      }
+      &__action {
+        gap: 2rem;
+        p {
+          font-size: 1.3rem;
+          font-weight: 700;
+        }
+      }
+    }
+    &__sub-header {
+      justify-content: space-between;
+      padding: 0 3rem;
+      border-bottom: 2px solid #f5f6f7;
+      margin-top: 4rem;
+
+      &__nav {
+        gap: 20px;
+        button {
+          box-sizing: content-box;
+          font-size: 1.2rem;
+          font-weight: 900;
+          padding: 3rem 0;
+          font-family: inherit;
+          color: #7d8fb3;
+        }
+        .btn-active {
+          color: #8833ff;
+          margin-bottom: -2px;
+          border-bottom: 2px solid #8833ff;
+        }
+      }
+    }
+    &__actions {
+      justify-content: space-between;
+      padding: 1.4rem 2.5rem;
+    }
+    &__body {
+      padding: 4%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 2%;
+      background-color: #fff;
+      &__blank {
+        h1 {
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: #4d5e80;
+          margin-top: 20%;
+        }
+      }
+    }
+    &__card {
+      height: 31rem;
+      border-radius: 10px;
+      border: 2px solid #f5f6f7;
+      flex-direction: column;
+      justify-content: space-between;
+      &__count {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        margin-top: 5.1rem;
+        color: #fff;
+        font-weight: 900;
+        font-size: 1rem;
+      }
+      &__title {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 0 1.7rem;
+        font-weight: 700;
+        color: #4d5e80;
+      }
+      button {
+        display: flex;
+        font-weight: 900;
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+        border: 2px solid #f5f6f7;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        color: #6b7a99;
+      }
+      &__footer {
+        display: flex;
+        height: 20%;
+        width: 100%;
+        border-top: 2px solid #f5f6f7;
+        & > div {
+          border-right: 2px solid #f5f6f7;
+        }
+        div {
+          flex: 1;
+          width: 50%;
+          gap: 10%;
+          p {
+            font-weight: 700;
+            font-size: 12px;
+            color: #7d8fb3;
+          }
+        }
+      }
+    }
+  }
+}
